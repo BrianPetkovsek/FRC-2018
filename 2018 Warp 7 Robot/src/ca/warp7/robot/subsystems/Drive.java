@@ -63,6 +63,7 @@ public class Drive {
 	
 	public void trackCube(double driveSpeed, double angleThresh){
 		double cubeAngleOffset = limelight.getXOffset();
+		System.out.println(cubeAngleOffset+"wowow");
 		double turnSpeed = 1 - Math.abs(cubeAngleOffset / angleThresh);
 		if (turnSpeed < 0)
 			turnSpeed = 0;

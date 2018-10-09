@@ -20,19 +20,12 @@ public class DualRemote extends ControlsBase {
 			intake.rampSpeed(0.75);
 		}else if (driver.getTrigger(kLeft) == DOWN) {//out take
 			intake.rampSpeed(-0.5);
-		}else if (driver.getDpad(90) == DOWN){
-			lift.overrideIntake = true;
-			intake.rampSpeed(0.75);
-		}else if (driver.getDpad(270) == DOWN){
-			lift.overrideIntake = true;
-			intake.rampSpeed(-0.75);
-		}else{
-			lift.overrideIntake = false;
+		}else{//memes
 			intake.rampSpeed(0);
 		}
 		
-		if (driver.getDpad(180) == PRESSED)
-			intakeTracking = !intakeTracking;
+		//if (driver.getDpad(180) == PRESSED)
+			//intakeTracking = !intakeTracking;
 		
 		if(driver.getStickButton(kRight) == PRESSED)
 			drive.setDrivetrainReversed(!drive.driveReversed());
